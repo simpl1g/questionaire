@@ -9,7 +9,7 @@ html lang="en"
 
     /! Le HTML5 shim, for IE6-8 support of HTML elements
     /[if lt IE 9]
-      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"
+    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"
     = stylesheet_link_tag "application", :media => "all"
     = favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144'
     = favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114'
@@ -18,36 +18,50 @@ html lang="en"
     = favicon_link_tag 'favicon.ico', :rel => 'shortcut icon'
     = javascript_include_tag "application"
 
-
-
   body
-    .navbar.navbar-fluid-top
-      .navbar-inner
-        .container-fluid
-          a.btn.btn-navbar data-target=".nav-collapse" data-toggle="collapse"
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.brand href="#"Apoex
-          .container-fluid.nav-collapse
-            ul.nav
-              li= link_to "Link 1", "/path1"
-              li= link_to "Link 2", "/path2"
-              li= link_to "Link 3", "/path3"
+    .navbar.navbar-inverse
+      .navbar-header
+        button.btn.btn-navbar data-target="#nav-collapse-01" data-toggle="collapse" type="button"
+      #nav-collapse-01.navbar-collapse.collapse
+        ul.nav
+          li
+            a href="#fakelink" Menu Item
+          li.active
+            a href="#fakelink"
+              | Messages
+              span.navbar-unread 1
+            ul
+              li
+                a href="#fakelink" Test
+              li
+                a href="#fakelink" Sub
+                ul
+                  li
+                    a href="#fakelink"  234
+                  li
+                    a href="#fakelink"  456
+                  li
+                    a href="#fakelink"  567
+                /! /Sub menu
+              li
+                a href="#fakelink" 6546
+            /! /Sub menu
+          li
+            a href="#fakelink"
+              | About Us
+      /! /.nav
 
-    .container-fluid
 
-      .row-fluid
-        .span3
-          .well.sidebar-nav
-            ul.nav.nav-list
-              li.nav-header Sidebar
-              li= link_to "Link 1", "/path1"
-              li= link_to "Link 2", "/path2"
-              li= link_to "Link 3", "/path3"
-        .span9
+    .container
+
+      .row
+        .col-md-9
           = bootstrap_flash
           = yield
-    
-      footer
-        p &copy; Company 2013
+        .col-md-3
+          .sidebar-nav
+            h3 Sidebar
+            ul.nav.nav-list
+              li= link_to "Link 1", "/path1"
+              li= link_to "Link 2", "/path2"
+              li= link_to "Link 3", "/path3"
