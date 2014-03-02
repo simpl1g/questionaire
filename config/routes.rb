@@ -1,5 +1,7 @@
 Apoex::Application.routes.draw do
-  root "public#index"
+  resources :links
+
+  root "links#index"
 
   devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
 end

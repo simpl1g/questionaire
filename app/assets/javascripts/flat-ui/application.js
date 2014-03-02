@@ -16,7 +16,7 @@ String.prototype.repeat = function(num) {
   };
 
   $(function() {
-  
+
     // Todo list
     $(".todo li").click(function() {
         $(this).toggleClass("todo-done");
@@ -25,6 +25,7 @@ String.prototype.repeat = function(num) {
     // Custom Selects
     $("select[name='huge']").selectpicker({style: 'btn-hg btn-primary', menuStyle: 'dropdown-inverse'});
     $("select[name='herolist']").selectpicker({style: 'btn-primary', menuStyle: 'dropdown-inverse'});
+    $("select[name='link[user_id]']").selectpicker({style: 'btn-primary', menuStyle: 'dropdown-inverse'});
     $("select[name='info']").selectpicker({style: 'btn-info'});
 
     // Tooltips
@@ -32,6 +33,9 @@ String.prototype.repeat = function(num) {
 
     // Tags Input
     $(".tagsinput").tagsInput();
+
+    // Checkboxes
+    $('input[type=checkbox]').checkbox();
 
     // jQuery UI Sliders
     var $slider = $("#slider");
@@ -64,7 +68,7 @@ String.prototype.repeat = function(num) {
 
     // Switch
     $("[data-toggle='switch']").wrap('<div class="switch" />').parent().bootstrapSwitch();
-    
+
   });
-  
+
 })(jQuery);

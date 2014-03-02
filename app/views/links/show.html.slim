@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Url:
+  = @link.url
+p
+  strong User:
+  = @link.user.name
+p
+  strong Tags:
+  = @link.tag_list
+p
+  strong Private:
+  = @link.private
+p
+  strong Description:
+  = @link.description
+
+= link_to 'Edit', edit_link_path(@link)
+'|
+= link_to 'Back', links_path
