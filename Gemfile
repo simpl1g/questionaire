@@ -24,7 +24,7 @@ gem 'quiet_assets'
 
 gem 'jbuilder', '~> 1.2'
 
-gem 'jazz_hands'
+gem 'jazz_hands', group: :development
 gem 'simple_form'
 gem 'devise'
 gem 'koala'
