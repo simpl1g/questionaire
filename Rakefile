@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Apoex::Application.load_tasks
+LinkBase::Application.load_tasks

@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: apoex_development
+  database: link_base_development
   pool: 5
   username: postgres
   password: postgres
@@ -46,15 +46,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: apoex_test
+  database: link_base_test
   pool: 5
   username: postgres
-  password: postgres 
+  password: postgres
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: apoex_production
+  database: link_base_production
   pool: 5
-  username: apoex
+  username: link_base
   password:

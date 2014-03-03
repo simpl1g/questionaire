@@ -1,4 +1,4 @@
-Apoex::Application.routes.draw do
+LinkBase::Application.routes.draw do
   resources :links
 
   root "links#index"

@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Apoex::Application.config.secret_key_base = '596fdbeb78514f6fade4b67d807d89e3e6ac1bfa893c1aad43ae8ec09e1bd0a06795db48a70d393f6aa53bfeacc7212856b090b477d8ca057e109777907422df'
+LinkBase::Application.config.secret_key_base = '596fdbeb78514f6fade4b67d807d89e3e6ac1bfa893c1aad43ae8ec09e1bd0a06795db48a70d393f6aa53bfeacc7212856b090b477d8ca057e109777907422df'
