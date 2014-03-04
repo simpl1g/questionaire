@@ -1,4 +1,4 @@
-h1 Listing links
+#tagCloud data-tags=@tags
 
 table
   tr
@@ -18,7 +18,7 @@ table
       td = link.description
       td = link_to 'Show', link
       td = link_to 'Edit', edit_link_path(link)
-      td = link_to 'Destroy', link, :confirm => 'Are you sure?', :method => :delete
+      td = link_to 'Destroy', link, :data => { :confirm => 'Are you sure?' }, :method => :delete
 
 br
 

@@ -21,6 +21,7 @@ gem 'less-rails-bootstrap'
 gem 'jquery-turbolinks'
 gem 'turbolinks'
 gem 'quiet_assets'
+gem "jqcloud-rails"
 
 gem 'jbuilder', '~> 1.2'
 
