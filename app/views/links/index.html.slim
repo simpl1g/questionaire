@@ -12,7 +12,7 @@ table
 
   - @links.each do |link|
     tr
-      td = link.url
+      td = sanitize(link_to link.url, link.url)
       td = link.user.name
       td = link.private
       td = link.description
