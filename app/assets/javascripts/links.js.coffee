@@ -1,5 +1,6 @@
 $ ->
   $tags = $("#tagCloud");
-  $tags.jQCloud($tags.data('tags'), {
-    height: 200
-  });
+  if $tags.length
+    $tags.jQCloud($tags.data('tags'), {
+      height: 200
+    });

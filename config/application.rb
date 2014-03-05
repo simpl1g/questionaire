@@ -26,5 +26,7 @@ module LinkBase
     # config.i18n.default_locale = :de
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
     config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+
+    config.middleware.insert_before 0, 'TagsAutocomplete'
   end
 end

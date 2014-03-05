@@ -32,7 +32,9 @@ String.prototype.repeat = function(num) {
     $("[data-toggle=tooltip]").tooltip("show");
 
     // Tags Input
-    $(".tagsinput").tagsInput();
+    $(".tagsinput").tagsInput({
+      autocomplete_url: '/tags_autocomplete'
+    });
 
     // Checkboxes
     $('input[type=checkbox]').checkbox();
